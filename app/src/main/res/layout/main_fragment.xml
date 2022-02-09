@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_tanque_level"
+        android:layout_width="320dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="40dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.075">
+
+        <TextView
+            android:id="@+id/tanqueLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-black"
+            android:text="100%"
+            android:textColor="@color/mila_primary_green"
+            android:textSize="104sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="98dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="@string/n_vel_dos_tanques"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_sensor_level"
+        android:layout_width="320dp"
+        android:layout_height="250dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cardView_next_action"
+        app:layout_constraintStart_toEndOf="@+id/cardView_tanque_level"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.076">
+
+        <TextView
+            android:id="@+id/humidadeLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-black"
+            android:text="100%"
+            android:textColor="@color/mila_primary_green"
+            android:textSize="104sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="98dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="@string/humidade_do_solo"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_next_action"
+        android:layout_width="320dp"
+        android:layout_height="250dp"
+        android:layout_marginEnd="40dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.076">
+
+        <TextView
+            android:id="@+id/nextOperationTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-black"
+            android:text="18:45"
+            android:textColor="@color/mila_primary_green"
+            android:textSize="104sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="98dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="@string/pr_xima_irriga_o"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text="@string/relat_rio"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView_tanque_level" />
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/recyclerView_Relatorio"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:layout_marginStart="40dp"
+        android:scrollbars="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:listitem="@layout/recyclerdesign" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

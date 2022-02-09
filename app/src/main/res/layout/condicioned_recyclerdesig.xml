@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/deleteConfig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/custom_button"
+                android:backgroundTint="@color/white"
+                android:clickable="true"
+                android:contentDescription="@string/eliminar_configura_o"
+                android:focusable="true"
+                android:src="@drawable/ic_baseline_delete" />
+
+            <TextView
+                android:id="@+id/sensorConfig"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="68dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/custom_button"
+                android:backgroundTint="@color/textAreaBG"
+                android:fontFamily="@font/ubuntu_medium"
+                android:padding="16dp"
+                android:text="@string/menuHome"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sensorConfig"
+                android:layout_marginStart="68dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/tipo_de_sensor" />
+
+            <ImageView
+                android:id="@+id/divisor"
+                android:layout_width="4dp"
+                android:layout_height="72dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/sensorConfig"
+                android:background="@drawable/custom_button"
+                android:backgroundTint="@color/mila_primary_green" />
+
+            <TextView
+                android:id="@+id/levelConfig"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:layout_toEndOf="@+id/divisor"
+                android:background="@drawable/custom_button"
+                android:backgroundTint="@color/textAreaBG"
+                android:fontFamily="@font/ubuntu_medium"
+                android:padding="16dp"
+                android:text="@string/menuHome"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/levelConfig"
+                android:layout_marginStart="32dp"
+                android:layout_marginBottom="16dp"
+                android:layout_toEndOf="@+id/divisor"
+                android:text="@string/n_vel_do_sensor_para_ativar_a_opera_o" />
+
+            <ImageView
+                android:id="@+id/divisor2"
+                android:layout_width="4dp"
+                android:layout_height="72dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/levelConfig"
+                android:background="@drawable/custom_button"
+                android:backgroundTint="@color/mila_primary_green" />
+
+            <TextView
+                android:id="@+id/operationConfig"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="64dp"
+                android:layout_toEndOf="@+id/divisor2"
+                android:background="@drawable/custom_button"
+                android:backgroundTint="@color/textAreaBG"
+                android:fontFamily="@font/ubuntu_medium"
+                android:padding="16dp"
+                android:text="@string/menuHome"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/operationConfig"
+                android:layout_marginStart="32dp"
+                android:layout_marginBottom="16dp"
+                android:layout_toEndOf="@+id/divisor2"
+                android:text="@string/tipo_de_opera_o_a_realizar_sobre_a_planta_o" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

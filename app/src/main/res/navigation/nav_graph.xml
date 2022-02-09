@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.dariopacule.mila.ui.main.MainFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment" />
+    <fragment
+        android:id="@+id/logicConfigFragment"
+        android:name="com.dariopacule.mila.ui.main.LogicConfigFragment"
+        android:label="LogicConfigFragment" />
+    <fragment
+        android:id="@+id/config_Fragment"
+        android:name="com.dariopacule.mila.ui.main.Config_Fragment"
+        android:label="Config_Fragment" />
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.dariopacule.mila.ui.main.helpFragment"
+        android:label="helpFragment" />
+</navigation>

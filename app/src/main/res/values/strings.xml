@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Mila</string>
+    <string name="menuHome">Home</string>
+    <string name="mila_app_name">Mila</string>
+    <string name="user_icon">User-icon</string>
+    <string name="botao_tela_inicial">Botao Tela Inicial</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="n_vel_dos_tanques">Nível dos tanques</string>
+    <string name="humidade_do_solo">Humidade do solo</string>
+    <string name="pr_xima_irriga_o">Próxima irrigação</string>
+    <string name="relat_rio">Relatório</string>
+    <string name="logica">Logica</string>
+    <string name="Title_padrao">Padrão</string>
+    <string name="condicionais">Condicionais</string>
+    <string name="adicionar_nova_programacao">Adicionar nova programacao</string>
+    <string name="adicionar_novo_padrao">Adicionar novo padrao</string>
+    <string name="adicionar_uma_logica_padr_o_ou_condicional">Adicionar uma Logica Padrão ou Condicional</string>
+    <string name="tipo_de_sensor">Tipo de Sensor</string>
+    <string name="eliminar_configura_o">Eliminar Configuração</string>
+    <string name="n_vel_do_sensor_para_ativar_a_opera_o">Nível do sensor para ativar a operação</string>
+    <string name="tipo_de_opera_o_a_realizar_sobre_a_planta_o">Tipo de operação a realizar sobre a plantação</string>
+</resources>
